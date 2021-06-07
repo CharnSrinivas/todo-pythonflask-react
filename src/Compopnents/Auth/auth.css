@@ -1,0 +1,44 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.user-name-div,
+.password-div {
+    color: #2c2c2c;
+    margin: 10px;
+}
+
+.login-btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login-btn>button {
+    background-color: orange;
+    border: 1px solid orange;
+    width: 80px;
+    border-radius: 7px;
+}
+
+.login-btn>a {
+    text-decoration: none;
+    font-size: small;
+}
+
+.user-name-div>input,
+.password-div>input {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid pink;
+}

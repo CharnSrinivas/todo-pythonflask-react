@@ -1,0 +1,91 @@
+.todos-main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+.date {
+    text-align: center;
+}
+
+.todo-list>ul,
+li {
+    list-style-type: none;
+}
+
+.todo-item {
+    display: flex;
+    margin: 10px 0 10px 0;
+    /* width: 100%; */
+    border: solid 2px black;
+}
+
+.todo-completed,
+.todo-uncompleted {
+    width: 100%;
+}
+
+.todo-completed>.task,
+.todo-uncompleted>.task {
+    height: 100%;
+    float: left;
+    text-align: center;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.todo-completed>.task {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.todos {
+    width: 100%;
+}
+
+.add-todo {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid rgb(255, 123, 0);
+    border-radius: 10px;
+}
+
+.add-todo>input {
+    width: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    padding: 5px;
+}
+
+.add-todo>button {
+    width: 30%;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.add-todo>button:active,
+.add-todo>button:hover {
+    border-radius: 10px;
+    border: 1px solid orangered;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 800px) {
+    .todos-main {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .todos-main {
+        max-width: 300px;
+    }
+}
