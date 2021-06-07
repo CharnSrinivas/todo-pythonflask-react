@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/.vscode
 .pnp.js
 # python flask api 
 /api/__pycache__
